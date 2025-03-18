@@ -1,54 +1,49 @@
 <!-- sample site banner -->
 <div id="anchor">
     <div id="df-banner">
-        <p id="banner-copy"><strong>This is a sample site built by Dave Fass.</strong> If you like what you see, get in touch!</p><a href="https://davefass.com/contact"
-        id="banner-button">Contact Me!</a>
+        <p id="banner-copy"><strong>This is a sample site built by Dave Fass.</strong> If you like what you see, get in
+            touch!</p><a href="https://davefass.com/contact" id="banner-button">Contact Me > </a>
     </div>
 </div>
 
 <style>
-    #anchor {
-        margin-bottom: 5rem;
-        max-height: 25vh;
-    }
     #df-banner {
         align-items: center;
-        background: paleturquoise;
+        background: #6000ff;
         border-bottom: 3px solid #000;
-        color: #000;
+        color: #fff;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         font-size: calc(16px + 3vw);
-        height: 10vh;
-        justify-content: space-between;
-        left: 0;
-        max-height: 25vh;
-        max-width:100%;
-        position: absolute;
-        top: 0;
-        vertical-align: middle;
+        justify-content: space-around;
+        max-width: 100%;
+        padding: 3vh;
         width: 100vw;
     }
 
     #banner-copy {
-        margin-left: 2em;
-        margin-right: 0.5em;
         font-size: 1.1rem;
     }
 
     #banner-button {
-        background: coral;
-        border: 1px solid maroon;
+        background: palegreen;
+        border: 2px solid #4100AF;
         border-radius: 10px;
         box-shadow: -0.1em 0.1em 0.2em #000;
-        color: #fff;
+        color: #000;
         font-size: 1rem;
         font-weight: 700;
-        margin-left: 0.5em;
-        margin-right: 2em;
-        padding: 0.35em 0.75em 0.2em 0.75em;
+        padding: 0.5em 1em;
         text-decoration: none;
         text-wrap: nowrap;
         vertical-align: middle;
     }
+
+    #banner-button:hover {
+        background: magenta;
+        color: #fff;
+        transition: 0.25s ease-in;
+        transform: scale(1.1);
+    }
 </style>
+
